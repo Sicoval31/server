@@ -607,9 +607,12 @@ $CONFIG = [
 /**
  * Allow remote servers with local addresses e.g. in federated shares, webcal services and more
  *
+ * This setting can be overriden when using the HTTP client with the
+ * ``\OC\Http\Client::allowUnsafeLocalConnection_I_KNOW_WHAT_I_AM_DOING()`` method.
+ *
  * Defaults to false
  */
-'allow_local_remote_servers' => true,
+'allow_local_remote_servers' => false,
 
 /**
  * Deleted Items (trash bin)
