@@ -925,6 +925,7 @@ class CardDavBackend implements BackendInterface, SyncSupport {
 				}
 			}
 		} else {
+			$qb = $this->db->getQueryBuilder();
 			$qb->select('uri')
 				->from('cards')
 				->where(
